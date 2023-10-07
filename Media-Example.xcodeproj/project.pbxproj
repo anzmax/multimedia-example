@@ -21,6 +21,8 @@
 		F41EBFCD2AD151330002821F /* Sea.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = F41EBFCC2AD151330002821F /* Sea.MP4 */; };
 		F41EBFCF2AD151390002821F /* Black-Abstract.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = F41EBFCE2AD151390002821F /* Black-Abstract.MP4 */; };
 		F41EBFD32AD151700002821F /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41EBFD22AD151700002821F /* VideoViewController.swift */; };
+		F41EBFD52AD152C80002821F /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41EBFD42AD152C80002821F /* YouTubeViewController.swift */; };
+		F41EBFD72AD1550F0002821F /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41EBFD62AD1550F0002821F /* RecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		F41EBFCC2AD151330002821F /* Sea.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sea.MP4; sourceTree = "<group>"; };
 		F41EBFCE2AD151390002821F /* Black-Abstract.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Black-Abstract.MP4"; sourceTree = "<group>"; };
 		F41EBFD22AD151700002821F /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		F41EBFD42AD152C80002821F /* YouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
+		F41EBFD62AD1550F0002821F /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			children = (
 				F41EBFA22AD150570002821F /* MusicViewController.swift */,
 				F41EBFD22AD151700002821F /* VideoViewController.swift */,
+				F41EBFD42AD152C80002821F /* YouTubeViewController.swift */,
+				F41EBFD62AD1550F0002821F /* RecordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -211,6 +217,8 @@
 			files = (
 				F41EBFA32AD150570002821F /* MusicViewController.swift in Sources */,
 				F41EBF9F2AD150570002821F /* AppDelegate.swift in Sources */,
+				F41EBFD52AD152C80002821F /* YouTubeViewController.swift in Sources */,
+				F41EBFD72AD1550F0002821F /* RecordViewController.swift in Sources */,
 				F41EBFD32AD151700002821F /* VideoViewController.swift in Sources */,
 				F41EBFA12AD150570002821F /* SceneDelegate.swift in Sources */,
 			);

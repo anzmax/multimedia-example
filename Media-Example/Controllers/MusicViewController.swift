@@ -1,7 +1,7 @@
 import UIKit
 import AVFoundation
 
-class MusicViewController: UIViewController {
+final class MusicViewController: UIViewController {
     
     var tracks = ["Dorian Marko - Cornfield Chase", "Kate Bush - Running Up That Hill", "Kyle Dixon & Michael Stein - Stranger Things", "The XX - Intro", "Korsi - Our Names"]
     
@@ -95,7 +95,7 @@ class MusicViewController: UIViewController {
         ])
     }
     
-    func setupAudioPlayer() {
+    private func setupAudioPlayer() {
         
         for track in tracks {
             guard let url = Bundle.main.url(forResource: track, withExtension: "mp3") else { return }
@@ -149,7 +149,7 @@ class MusicViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-
+    
     private func setupAudioSession() {
         let session = AVAudioSession.sharedInstance()
         do {
@@ -179,7 +179,7 @@ class MusicViewController: UIViewController {
         playerLayer.frame = view.bounds
         playerLayer.videoGravity = .resizeAspectFill
         self.videoLayer.layer.addSublayer(playerLayer)
-
+        
         NotificationCenter.default.addObserver(self, selector: #selector(videoDidEnd), name: .AVPlayerItemDidPlayToEndTime, object: player.currentItem)
         
         player.play()
@@ -191,6 +191,5 @@ class MusicViewController: UIViewController {
             player.player?.play()
         }
     }
-    
 }
 
