@@ -10,23 +10,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let musicVC = MusicViewController()
         let videoVC = VideoViewController()
+        let recordVC = RecordViewController()
         let tabBarController = UITabBarController()
         let musicNAV = UINavigationController(rootViewController: musicVC)
         let videoNAV = UINavigationController(rootViewController: videoVC)
+        let recordNAV = UINavigationController(rootViewController: recordVC)
         
         let musicImage = UIImage(systemName: "play.rectangle.fill")?
             .withTintColor(UIColor.lightGray, renderingMode: .alwaysOriginal)
         musicNAV.tabBarItem = UITabBarItem(title: "", image: musicImage, tag: 0)
         musicNAV.tabBarItem.selectedImage = musicImage
-        //musicNAV.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.lightGray], for: .normal)
         
         let videoImage = UIImage(systemName: "video.fill")?
             .withTintColor(UIColor.lightGray, renderingMode: .alwaysOriginal)
         videoNAV.tabBarItem = UITabBarItem(title: "", image: videoImage, tag: 1)
         videoNAV.tabBarItem.selectedImage = videoImage
-        //videoNAV.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.lightGray], for: .normal)
+        
+        let recordImage = UIImage(systemName: "recordingtape")?
+            .withTintColor(UIColor.lightGray, renderingMode: .alwaysOriginal)
+        recordNAV.tabBarItem = UITabBarItem(title: "", image: recordImage, tag: 2)
+        recordNAV.tabBarItem.selectedImage = recordImage
 
-        tabBarController.viewControllers = [musicNAV, videoNAV]
+        tabBarController.viewControllers = [musicNAV, videoNAV, recordNAV]
         tabBarController.selectedIndex = 0
         window = UIWindow(windowScene: scene)
         window?.rootViewController = tabBarController

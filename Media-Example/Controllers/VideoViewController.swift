@@ -13,25 +13,25 @@ final class VideoViewController: UIViewController {
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = .white
+        tableView.backgroundColor = .systemGray5
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "VideoCell")
-            
+        
         return tableView
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         setupConstraints()
     }
-
+    
     private func setupViews() {
-        view.backgroundColor = .white
+        view.backgroundColor = .systemGray5
         view.addSubview(tableView)
     }
-
+    
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
