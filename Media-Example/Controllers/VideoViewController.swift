@@ -3,11 +3,11 @@ import UIKit
 final class VideoViewController: UIViewController {
     
     var videoData: [(title: String, videoURL: URL)] = [
-        ("Основы управления памятью", URL(string: "https://www.youtube.com/watch?v=9oQ5lE9nH48")!),
-        ("Swift Keywords", URL(string: "https://www.youtube.com/watch?v=bBXdXmUobMw&list=PL8seg1JPkqgHx8DgGsHB4Dh_H_78x8oQE")!),
-        ("POST-запрос", URL(string: "https://www.youtube.com/watch?v=CD_bWZSUBxY")!),
-        ("Mad Brains Техно", URL(string: "https://www.youtube.com/watch?v=uEeFqIUXJcE")!),
-        ("Лайвкодинг: JMVC FTW! / Евгений Елчев", URL(string: "https://www.youtube.com/watch?v=sM-AaI32hTc&list=PLNSmyatBJig4ScUXL-iJh63tZr1DhTVuN&index=6")!),
+        ("ARC", URL(string: "https://www.youtube.com/watch?v=VcoZJ88d-vM")!),
+        ("How to build a UICollectionView", URL(string: "https://www.youtube.com/watch?v=SR7DtcT61tA")!),
+        ("Generic Networking Layer in iOS apps", URL(string: "https://www.youtube.com/watch?v=Eo3WkbUV-fU")!),
+        ("SwiftUI: Build macOS App", URL(string: "https://www.youtube.com/watch?v=6Qa-SspgRMM")!),
+        ("Solving Problems", URL(string: "https://www.youtube.com/watch?v=Emfz7eOUqaQ")!),
     ]
     
     lazy var tableView: UITableView = {

@@ -60,12 +60,10 @@ final class MusicViewController: UIViewController {
     
     private func setupViews() {
         view.backgroundColor = .white
-        view.addSubview(videoLayer)
-        view.addSubview(playButton)
-        view.addSubview(forwardButton)
-        view.addSubview(backwardButton)
-        view.addSubview(trackLabel)
-        
+        [videoLayer, playButton, forwardButton, backwardButton, trackLabel].forEach {
+            view.addSubview($0)
+            $0.translatesAutoresizingMaskIntoConstraints = false
+        }
     }
     
     private func setupConstraints() {
